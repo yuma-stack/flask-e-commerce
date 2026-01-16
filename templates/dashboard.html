@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto p-6">
+  <div class="bg-white p-6 rounded shadow">
+    <h2 class="text-lg font-semibold mb-4">Add Task</h2>
+
+    <form method="post" class="flex gap-2">
+      <input class="flex-1 border p-2 rounded" placeholder="Task name">
+      <button class="bg-black text-white px-4 rounded">Add</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
