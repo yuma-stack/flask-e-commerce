@@ -8,20 +8,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Optional: custom config -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#2563eb',
+   <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#6727ce',
+              50:  '#f5f0ff',
+              100: '#ede5ff',
+              200: '#dcd0ff',
+              300: '#c4aaff',
+              400: '#a67eff',
+              500: '#6727ce',
+              600: '#5e22c0',
+              700: '#4e1ca3',
+              800: '#411885',
+              900: '#36126d',
+            },
+            accent: '#433bff',
+            secondary: '#ddd6ff',
+            brand: {
+              text: '#030712',
+              bg: '#f8fafc',
+              dark: {
+                text: '#f1f5f9',
+                bg: '#0f172a',
+              }
             }
           }
         }
       }
-    </script>
+    }
+  </script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-brand-bg dark:bg-brand-dark-bg text-brand-text dark:text-brand-dark-text min-h-screen font-sans antialiased">
     {% block content %}{% endblock %}
 </body>
 </html>
